@@ -7,3 +7,13 @@ def deal_card():
     return card
 
 
+def calculate_score (list):
+    """Takes a list of cards and returns the score calculated from the cards."""
+    score = sum(list)
+    if score == 21 and len(list) == 2:
+        return 0
+    if score > 21 and 11 in list:
+        list.remove(11)
+        list.append(1)
+    return score
+
