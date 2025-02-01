@@ -69,6 +69,4 @@ def play_game():
     print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
     print(compare(user_score, computer_score))
 
-restart = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
-while restart == "y":
-    play_game()
+play_game()
